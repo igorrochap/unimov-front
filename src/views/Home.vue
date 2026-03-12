@@ -461,6 +461,7 @@
 
 .carousel {
     display: flex;
+    gap: 0.5rem;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     scrollbar-width: none;
