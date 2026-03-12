@@ -32,28 +32,35 @@
 
                 <div class="initial-section-logo-text">
                     <h1 class="initial-section-logo-title">unimov</h1>
-                    <p class="initial-section-logo-subtitle">Gestão inteligente do transporte universitário</p>
+                    <p class="initial-section-logo-subtitle">
+                        Gestão inteligente do transporte universitário
+                    </p>
                 </div>
             </div>
             <div class="initial-section-text">
                 <p>
-                    Plataforma para gerenciamento de transporte estudantil que conecta estudantes, motoristas e
-                    prefeituras
-                    de forma simples e eficiente.
+                    Plataforma para gerenciamento de transporte estudantil que conecta estudantes,
+                    motoristas e prefeituras de forma simples e eficiente.
                 </p>
             </div>
             <div class="initial-section-buttons">
-                <button class="initial-section-buttons-button initial-section-buttons-create-account">Criar conta de
-                    aluno</button>
-                <button class="initial-section-buttons-button initial-section-buttons-login">Entrar</button>
+                <router-link to="/register" class="initial-section-buttons-button initial-section-buttons-register">
+                    Criar conta de aluno
+                </router-link>
+                <router-link to="/login" class="initial-section-buttons-button initial-section-buttons-login">
+                    Entrar
+                </router-link>
             </div>
         </section>
 
         <section class="about" id="about">
             <h2 class="about-title">Sobre o unimov</h2>
-            <p class="about-text"> O unimov é uma plataforma criada para facilitar a gestão do transporte universitário
-                intermunicipal, oferecendo ferramentas para organização de rotas, controle de embarques e acompanhamento
-                do uso do transporte de forma simples e eficiente.</p>
+            <p class="about-text">
+                O unimov é uma plataforma criada para facilitar a gestão do transporte
+                universitário intermunicipal, oferecendo ferramentas para organização de rotas,
+                controle de embarques e acompanhamento do uso do transporte de forma simples e
+                eficiente.
+            </p>
         </section>
 
         <section class="help">
@@ -81,9 +88,10 @@
                 </div>
                 <div class="help-title-card-text">
                     <p class="help-title-card-text-title">Gestão de Rotas</p>
-                    <p class="help-title-card-text-text">Organização completa das rotas, com cadastro de pontos de
-                        embarque, destinos e definição das
-                        viagens realizadas.</p>
+                    <p class="help-title-card-text-text">
+                        Organização completa das rotas, com cadastro de pontos de embarque, destinos e
+                        definição das viagens realizadas.
+                    </p>
                 </div>
             </div>
 
@@ -99,15 +107,14 @@
                                 d="M8.5625 18.9375H17.9375V9.5625H8.5625V18.9375ZM11.6875 12.6875H14.8125V15.8125H11.6875V12.6875ZM21.0625 9.5625V18.9375H30.4375V9.5625H21.0625ZM27.3125 15.8125H24.1875V12.6875H27.3125V15.8125ZM8.5625 31.4375H17.9375V22.0625H8.5625V31.4375ZM11.6875 25.1875H14.8125V28.3125H11.6875V25.1875ZM28.875 22.0625H30.4375V28.3125H25.75V26.75H24.1875V31.4375H21.0625V22.0625H25.75V23.625H28.875V22.0625ZM28.875 29.875H30.4375V31.4375H28.875V29.875ZM25.75 29.875H27.3125V31.4375H25.75V29.875Z"
                                 fill="#1EAE53" />
                         </svg>
-
-
-
                     </div>
                 </div>
                 <div class="help-title-card-text">
                     <p class="help-title-card-text-title">Confirmação de Embarque</p>
-                    <p class="help-title-card-text-text">Os estudantes confirmam sua presença nas viagens através de QR
-                        Code, garantindo mais agilidade e controle.</p>
+                    <p class="help-title-card-text-text">
+                        Os estudantes confirmam sua presença nas viagens através de QR Code,
+                        garantindo mais agilidade e controle.
+                    </p>
                 </div>
             </div>
 
@@ -130,13 +137,14 @@
                                 </clipPath>
                             </defs>
                         </svg>
-
                     </div>
                 </div>
                 <div class="help-title-card-text">
                     <p class="help-title-card-text-title">Monitoramento do Transporte</p>
-                    <p class="help-title-card-text-text">Prefeituras podem acompanhar a ocupação dos veículos,
-                        frequência dos estudantes e dados das rotas em tempo real.</p>
+                    <p class="help-title-card-text-text">
+                        Prefeituras podem acompanhar a ocupação dos veículos, frequência dos
+                        estudantes e dados das rotas em tempo real.
+                    </p>
                 </div>
             </div>
         </section>
@@ -146,12 +154,24 @@
             <div class="team-image">
                 <div class="team-image-bg"></div>
                 <div class="team-image-wrapper">
-                    <img src="@/assets/team-img.png" alt="Imagem da equipe do unimov">
+                    <img src="@/assets/team-img.png" alt="Imagem da equipe do unimov" />
                 </div>
             </div>
-            <p class="team-text">O unimov é um projeto acadêmico desenvolvido por estudantes de Sistemas de Informação
-                do Instituto
-                Federal de Alagoas.</p>
+            <p class="team-text">
+                O unimov é um projeto acadêmico desenvolvido por estudantes de Sistemas de
+                Informação do Instituto Federal de Alagoas.
+            </p>
+        </section>
+
+        <section class="reason">
+            <svg width="25" height="35" viewBox="0 0 25 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M6.5666 31.0591C6.56729 31.4891 6.69443 31.9102 6.93301 32.2684L8.10127 34.0246C8.30084 34.3248 8.57153 34.571 8.88925 34.7413C9.20697 34.9116 9.56187 35.0007 9.92236 35.0007H14.1408C14.5013 35.0007 14.8562 34.9116 15.1739 34.7413C15.4917 34.571 15.7623 34.3248 15.9619 34.0246L17.1302 32.2684C17.3686 31.9102 17.4961 31.4895 17.4966 31.0591L17.4993 28.4376H6.56318L6.5666 31.0591ZM0 12.0313C0 15.0644 1.12451 17.8316 2.97773 19.946C4.10703 21.2345 5.87344 23.9265 6.54678 26.1974C6.54951 26.2152 6.55156 26.233 6.5543 26.2507H17.5082C17.5109 26.233 17.513 26.2159 17.5157 26.1974C18.1891 23.9265 19.9555 21.2345 21.0848 19.946C22.938 17.8316 24.0625 15.0644 24.0625 12.0313C24.0625 5.37379 18.656 -0.0204495 11.9937 5.82817e-05C5.02031 0.0212497 0 5.67184 0 12.0313ZM12.0312 6.56256C9.01592 6.56256 6.5625 9.01598 6.5625 12.0313C6.5625 12.6356 6.07305 13.1251 5.46875 13.1251C4.86445 13.1251 4.375 12.6356 4.375 12.0313C4.375 7.80943 7.80938 4.37506 12.0312 4.37506C12.6355 4.37506 13.125 4.86451 13.125 5.46881C13.125 6.07311 12.6355 6.56256 12.0312 6.56256Z"
+                    fill="#F8FAFC" />
+            </svg>
+            <p>A iniciativa surgiu com o objetivo de aplicar, na prática, nossos conhecimentos em engenharia de software
+                para criar uma solução digital que contribua para melhorar a organização do transporte universitário
+                intermunicipal.</p>
         </section>
 
         <section class="developers">
@@ -160,42 +180,42 @@
                 <ul class="carousel">
                     <li>
                         <div>
-                            <img src="@/assets/team-profile-pics/malu-profile-pic.png" alt="Foto da Malu">
+                            <img src="@/assets/team-profile-pics/malu-profile-pic.png" alt="Foto da Malu" />
                             <p class="developers-name">Maria Luísa</p>
                             <p class="developers-role">Gerente de Projeto e Desenvolvedora Back-end</p>
                         </div>
                     </li>
                     <li>
                         <div>
-                            <img src="@/assets/team-profile-pics/igor-profile-pic.png" alt="Foto da Malu">
+                            <img src="@/assets/team-profile-pics/igor-profile-pic.png" alt="Foto da Malu" />
                             <p class="developers-name">Igor Rocha</p>
                             <p class="developers-role">Líder técnico e Desenvolvedor Back-end</p>
                         </div>
                     </li>
                     <li>
                         <div>
-                            <img src="@/assets/team-profile-pics/isaque-profile-pic.png" alt="Foto da Malu">
+                            <img src="@/assets/team-profile-pics/isaque-profile-pic.png" alt="Foto da Malu" />
                             <p class="developers-name">Isaque Braga</p>
                             <p class="developers-role">Desenvolvedor Front-end e Tester</p>
                         </div>
                     </li>
                     <li>
                         <div>
-                            <img src="@/assets/team-profile-pics/renilson-profile-pic.png" alt="Foto da Malu">
+                            <img src="@/assets/team-profile-pics/renilson-profile-pic.png" alt="Foto da Malu" />
                             <p class="developers-name">Renilson José</p>
                             <p class="developers-role">Designer e desenvolvedor Front-end</p>
                         </div>
                     </li>
                     <li>
                         <div>
-                            <img src="@/assets/team-profile-pics/andrezza-profile-pic.png" alt="Foto da Malu">
+                            <img src="@/assets/team-profile-pics/andrezza-profile-pic.png" alt="Foto da Malu" />
                             <p class="developers-name">Andrezza Abreu</p>
                             <p class="developers-role">Desenvolvedora Front-end e Designer</p>
                         </div>
                     </li>
                     <li>
                         <div>
-                            <img src="@/assets/team-profile-pics/eduardo-profile-pic.png" alt="Foto da Malu">
+                            <img src="@/assets/team-profile-pics/eduardo-profile-pic.png" alt="Foto da Malu" />
                             <p class="developers-name">Eduardo Calado</p>
                             <p class="developers-role">Tester e Desenvolvedor Back-end</p>
                         </div>
@@ -205,8 +225,65 @@
         </section>
     </main>
 
-    <footer>
+    <footer class="footer">
+        <div class="footer-header">
+            <h1>Pronto para usar o unimov?</h1>
+            <p>Cadastre-se e comece a gerenciar ou utilizar o transporte universitário de forma simples.</p>
+            <div class="footer-header-buttons">
+                <router-link to="/register" class="footer-header-buttons-button footer-header-buttons-register">Criar
+                    conta de aluno</router-link>
+                <router-link to="/login" class="footer-header-buttons-button footer-header-buttons-login">Acessar
+                    Sistema</router-link>
+            </div>
+        </div>
 
+        <div class="footer-main-content">
+            <div class="footer-main-content-top">
+                <h1>unimov</h1>
+                <p>Sistema para gestão do transporte universitário intermunicipal.</p>
+            </div>
+            <div class="footer-main-content-middle">
+                <p>NAVEGAÇÃO</p>
+                <nav>
+                    <ul>
+                        <li><a href="#about">Sobre</a></li>
+                        <li><a href="#team">Equipe</a></li>
+                        <li><router-link to="/register">Cadastro</router-link></li>
+                        <li><router-link to="/login">Login</router-link></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer-main-content-bottom">
+                <p class="footer-main-content-bottom-title">CONTATO</p>
+                <div>
+                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <mask id="mask0_47_4566" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="1"
+                            width="13" height="11">
+                            <path
+                                d="M2.16667 1.08325C1.59203 1.08325 1.04093 1.31153 0.634602 1.71785C0.228273 2.12418 0 2.67528 0 3.24992V3.46767L6.5 6.96792L13 3.46875V3.24992C13 2.67528 12.7717 2.12418 12.3654 1.71785C11.9591 1.31153 11.408 1.08325 10.8333 1.08325H2.16667ZM13 4.69833L6.75675 8.05992C6.67784 8.1024 6.58962 8.12463 6.5 8.12463C6.41038 8.12463 6.32216 8.1024 6.24325 8.05992L0 4.69833V9.74992C0 10.3246 0.228273 10.8757 0.634602 11.282C1.04093 11.6883 1.59203 11.9166 2.16667 11.9166H10.8333C11.408 11.9166 11.9591 11.6883 12.3654 11.282C12.7717 10.8757 13 10.3246 13 9.74992V4.69833Z"
+                                fill="#006FFD" />
+                        </mask>
+                        <g mask="url(#mask0_47_4566)">
+                            <rect y="-0.000488281" width="13" height="13" fill="#F8FAFC" />
+                        </g>
+                    </svg>
+                    <p>unimov@gmail.com</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-footer">
+            <div>
+                <p>© 2026 unimov Todos os direitos reservados.</p>
+            </div>
+            <div>
+                <ul>
+                    <li>Termos de Uso</li>
+                    <li>Privacidade</li>
+                    <li>Acessibilidade</li>
+                </ul>
+            </div>
+        </div>
     </footer>
 </template>
 
@@ -247,8 +324,8 @@
 
 .header-menu .button-login {
     padding: 0.6rem 1.1rem;
-    background-color: #F8FAFC;
-    color: #1E293B;
+    background-color: #f8fafc;
+    color: #1e293b;
     border-radius: 8px;
     font-size: 0.875rem;
     font-weight: 600;
@@ -281,7 +358,7 @@
     justify-content: space-between;
     height: 53px;
     line-height: 1;
-    color: #1E293B;
+    color: #1e293b;
 }
 
 .initial-section-logo-title {
@@ -290,7 +367,7 @@
 }
 
 .initial-section-logo-subtitle {
-    font-size: 0.750rem;
+    font-size: 0.75rem;
     font-weight: 500;
 }
 
@@ -315,17 +392,22 @@
     border-radius: 8px;
     border: none;
     font-family: "Poppins";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-family: "Poppins";
 }
 
-.initial-section-buttons-create-account {
-    background-color: #1EAE53;
+.initial-section-buttons-register {
+    background-color: #1eae53;
     color: var(--white);
 }
 
 .initial-section-buttons-login {
     background-color: var(--white);
-    border: 2px solid #9CA8BF;
-    color: #9CA8BF;
+    border: 2px solid #9ca8bf;
+    color: #9ca8bf;
 }
 
 .about {
@@ -355,7 +437,7 @@
 }
 
 .help h1 {
-    font-size: 1.250rem;
+    font-size: 1.25rem;
     font-weight: 600;
     text-align: center;
     margin-bottom: 1rem;
@@ -386,11 +468,11 @@
 }
 
 .card-green {
-    background-color: #1EAE53;
+    background-color: #1eae53;
 }
 
 .card-gray {
-    background-color: #9CA8BF;
+    background-color: #9ca8bf;
 }
 
 .team {
@@ -402,7 +484,7 @@
     font-weight: 700;
     font-size: 1.75rem;
     margin-bottom: 0.5rem;
-    color: #1E293B;
+    color: #1e293b;
 }
 
 .team-image {
@@ -414,7 +496,7 @@
 }
 
 .team-image-bg {
-    background-color: #CED4DF;
+    background-color: #ced4df;
     width: 100vw;
     height: 9.5625rem;
     z-index: 1;
@@ -437,9 +519,27 @@
 .team-text {
     font-weight: 400;
     font-size: 0.875rem;
-    margin-top: 0,5rem;
+    margin-top: 0, 5rem;
     padding: 0 1rem;
-    color: #1E293B;
+    color: #1e293b;
+}
+
+.reason {
+    background-color: #1EAE53;
+    padding: 1.5rem 1rem;
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.reason p {
+    font-weight: 400;
+    font-size: 0.75rem;
+    color: #F8FAFC;
+    text-align: center;
 }
 
 .developers {
@@ -498,5 +598,136 @@
     font-weight: 400;
     font-size: 0.6875rem;
     padding: 0 0.5rem;
+}
+
+.footer {
+    background-color: #1E293B;
+    color: #F8FAFC;
+    margin-top: 2rem;
+    padding: 1.5rem 1rem;
+}
+
+.footer-header h1 {
+    font-weight: 700;
+    font-size: 0.875rem;
+    text-align: center;
+}
+
+.footer-header p {
+    font-weight: 400;
+    font-size: 0.75rem;
+    text-align: center;
+    padding: 0 2rem;
+    margin-top: 0.2rem;
+}
+
+.footer-header-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.footer-header-buttons-button {
+    width: 55%;
+    height: 3rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    border-radius: 8px;
+    border: none;
+    font-family: "Poppins";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-family: "Poppins";
+}
+
+.footer-header-buttons-register {
+    background-color: #F8FAFC;
+    color: #1E293B;
+}
+
+.footer-header-buttons-login {
+    border: 2px solid #F8FAFC;
+    color: #F8FAFC;
+}
+
+.footer-main-content {
+    border-top: 1px solid #CED4DF;
+    border-bottom: 1px solid #CED4DF;
+    margin: 2rem 0 1rem 0;
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.footer-main-content-top h1 {
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1;
+}
+
+.footer-main-content-top p {
+    font-weight: 400;
+    font-size: 0.625rem;
+    padding-top: 0.2rem;
+}
+
+.footer-main-content-middle p {
+    font-weight: 600;
+    font-size: 0.75rem;
+}
+
+.footer-main-content-middle nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    margin-top: 0.2rem;
+}
+
+.footer-main-content-middle nav ul li {
+    list-style: none;
+    line-height: 1;
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 0.625rem;
+}
+
+.footer-main-content-middle nav ul li a {
+    color: #F8FAFC;
+    text-decoration: none;
+}
+
+.footer-main-content-bottom-title {
+    font-weight: 600;
+    font-size: 0.75rem;
+}
+
+.footer-main-content-bottom div {
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+    font-weight: 400;
+    font-size: 0.625rem;
+    margin-top: 0.2rem;
+}
+
+.footer-footer div p {
+    font-weight: 275;
+    font-size: 0.625rem;
+}
+
+.footer-footer div ul {
+    display: flex;
+    font-weight: 275;
+    font-size: 0.625rem;
+    text-align: center;
+    justify-content: space-evenly;
+    list-style: none;
+    margin-top: 1rem;
 }
 </style>
