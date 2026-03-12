@@ -267,7 +267,7 @@
                             <rect y="-0.000488281" width="13" height="13" fill="#F8FAFC" />
                         </g>
                     </svg>
-                    <p>unimov@gmail.com</p>
+                    <p><a href="mailto:unimov@gmail.com">unimov@gmail.com</a></p>
                 </div>
             </div>
         </div>
@@ -714,6 +714,11 @@
     font-weight: 400;
     font-size: 0.625rem;
     margin-top: 0.2rem;
+}
+
+.footer-main-content-bottom div a {
+    color: #F8FAFC;
+    text-decoration: none;
 }
 
 .footer-footer div p {
