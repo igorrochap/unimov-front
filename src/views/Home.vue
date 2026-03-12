@@ -140,7 +140,74 @@
                 </div>
             </div>
         </section>
+
+        <section class="team" id="team">
+            <h1 class="team-title">Quem Somos</h1>
+            <div class="team-image">
+                <div class="team-image-bg"></div>
+                <div class="team-image-wrapper">
+                    <img src="@/assets/team-img.png" alt="Imagem da equipe do unimov">
+                </div>
+            </div>
+            <p class="team-text">O unimov é um projeto acadêmico desenvolvido por estudantes de Sistemas de Informação
+                do Instituto
+                Federal de Alagoas.</p>
+        </section>
+
+        <section class="developers">
+            <h1>Conheça os desenvolvedores</h1>
+            <div class="carousel-wrapper">
+                <ul class="carousel">
+                    <li>
+                        <div>
+                            <img src="@/assets/team-profile-pics/malu-profile-pic.png" alt="Foto da Malu">
+                            <p class="developers-name">Maria Luísa</p>
+                            <p class="developers-role">Gerente de Projeto e Desenvolvedora Back-end</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="@/assets/team-profile-pics/igor-profile-pic.png" alt="Foto da Malu">
+                            <p class="developers-name">Igor Rocha</p>
+                            <p class="developers-role">Líder técnico e Desenvolvedor Back-end</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="@/assets/team-profile-pics/isaque-profile-pic.png" alt="Foto da Malu">
+                            <p class="developers-name">Isaque Braga</p>
+                            <p class="developers-role">Desenvolvedor Front-end e Tester</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="@/assets/team-profile-pics/renilson-profile-pic.png" alt="Foto da Malu">
+                            <p class="developers-name">Renilson José</p>
+                            <p class="developers-role">Designer e desenvolvedor Front-end</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="@/assets/team-profile-pics/andrezza-profile-pic.png" alt="Foto da Malu">
+                            <p class="developers-name">Andrezza Abreu</p>
+                            <p class="developers-role">Desenvolvedora Front-end e Designer</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="@/assets/team-profile-pics/eduardo-profile-pic.png" alt="Foto da Malu">
+                            <p class="developers-name">Eduardo Calado</p>
+                            <p class="developers-role">Tester e Desenvolvedor Back-end</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
     </main>
+
+    <footer>
+
+    </footer>
 </template>
 
 <style scoped>
@@ -324,5 +391,111 @@
 
 .card-gray {
     background-color: #9CA8BF;
+}
+
+.team {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.team-title {
+    font-weight: 700;
+    font-size: 1.75rem;
+    margin-bottom: 0.5rem;
+    color: #1E293B;
+}
+
+.team-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    position: relative;
+}
+
+.team-image-bg {
+    background-color: #CED4DF;
+    width: 100vw;
+    height: 9.5625rem;
+    z-index: 1;
+    position: absolute;
+}
+
+.team-image-wrapper {
+    filter: drop-shadow(0px 0px 4px #00000040);
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
+
+.team-image img {
+    width: 100%;
+    border-radius: 8px;
+    clip-path: inset(6px round 8px);
+}
+
+.team-text {
+    font-weight: 400;
+    font-size: 0.875rem;
+    margin-top: 0,5rem;
+    padding: 0 1rem;
+    color: #1E293B;
+}
+
+.developers {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.developers h1 {
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+}
+
+.carousel-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    width: 100%;
+    list-style: none;
+    margin: 0;
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.developers ul li div {
+    width: 8.3125rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+.developers ul li img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.developers-name {
+    font-weight: 600;
+    font-size: 0.9375rem;
+}
+
+.developers-role {
+    font-weight: 400;
+    font-size: 0.6875rem;
+    padding: 0 0.5rem;
 }
 </style>
