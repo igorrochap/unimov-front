@@ -6,17 +6,7 @@
     box-sizing: border-box;
 }
 
-:root {
-    --light-blue: #2563EB;
-    --white: #FFF;
-    --black: #000;
-    --base-font: 'Poppins';
-}
-
 html {
     scroll-behavior: smooth;
-}
-
-body {
-    font-family: var(--base-font);
+    font-family: 'Poppins';
 }
