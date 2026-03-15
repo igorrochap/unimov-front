@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref, onMounted } from 'vue'
+import { ref } from 'vue'
 import handPcImg from '@/assets/hand-pc-img.jpg'
 import qrCodeImg from '@/assets/qr-code-img.jpg'
 import busImg from '@/assets/bus-img.jpg'
@@ -11,8 +11,6 @@ interface HowToUseCard {
     description: string
     image: string
 }
-
-const carousel = ref<HTMLElement | null>(null)
 
 const activeCardIndex = ref<number>(0)
 
@@ -39,35 +37,6 @@ const howToUseCards: HowToUseCard[] = [
         image: busImg,
     },
 ]
-
-onMounted(() => {
-    const el = carousel.value
-    if (!el) return
-
-    let isDown = false
-    let startX = 0
-    let scrollLeft = 0
-
-    el.addEventListener('touchstart', (e: TouchEvent) => {
-        const touch = e.touches?.[0]
-        if (!touch) return
-        isDown = true
-        startX = touch.pageX - el.offsetLeft
-        scrollLeft = el.scrollLeft
-    }, { passive: true })
-
-    el.addEventListener('touchend', () => {
-        if (!isDown) return
-        isDown = false
-        const maxScroll = el.scrollWidth - el.clientWidth
-
-        if (el.scrollLeft < 0) {
-            el.scrollTo({ left: 0, behavior: 'smooth' })
-        } else if (el.scrollLeft > maxScroll) {
-            el.scrollTo({ left: maxScroll, behavior: 'smooth' })
-        }
-    }, { passive: true })
-})
 </script>
 
 <template>
@@ -270,7 +239,7 @@ onMounted(() => {
         <section class="developers">
             <h1>Conheça os desenvolvedores</h1>
             <div class="carousel-wrapper">
-                <ul class="carousel" ref="carousel">
+                <ul class="carousel">
                     <li>
                         <div>
                             <img src="@/assets/team-profile-pics/malu-profile-pic.png" alt="Foto da Malu" />
@@ -857,14 +826,6 @@ onMounted(() => {
     margin-bottom: 1.5rem;
 }
 
-.developers ul li div {
-    transition: transform 0.25s ease;
-}
-
-.developers ul li div:hover {
-    transform: translateY(-4px);
-}
-
 .developers ul li img {
     transition: box-shadow 0.25s ease;
 }
@@ -883,14 +844,10 @@ onMounted(() => {
     display: flex;
     gap: 0.5rem;
     overflow-x: auto;
-    scroll-snap-type: x mandatory;
     scrollbar-width: none;
     width: 100%;
     list-style: none;
     margin: 0;
-    scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch;
-    overscroll-behavior-x: contain;
 }
 
 .carousel::-webkit-scrollbar {
